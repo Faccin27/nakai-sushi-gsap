@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Reviews from "@/components/Reviews";
 import { initializeGSAP } from '@/lib/gsap';
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function Home() {
     <Menu />
     <Reviews />
     <Contact />
+    <Footer />
   </div>
   );
 }
