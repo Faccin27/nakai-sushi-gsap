@@ -2,26 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 215 70% 14%; /* Navy blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 59% 52%; /* Red accent */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 35 33% 92%; /* Beige */
+    --muted-foreground: 215 25% 27%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .container-padded {
+    @apply container px-4 md:px-6 lg:px-8;
   }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-display font-bold;
+  }
+  
+  .heading-md {
+    @apply text-2xl md:text-3xl font-display font-semibold;
+  }
+  
+  .reveal-element {
+    @apply opacity-0; /* Elements start invisible for GSAP to reveal */
+  }
+
+  /* Red Japanese divider */
+  .japanese-divider {
+    @apply relative flex items-center justify-center my-8;
+  }
+  
+  .japanese-divider::before, .japanese-divider::after {
+    @apply content-[''] flex-grow h-0.5 bg-nakai-red mx-4;
+  }
+  
+  /* Removida a classe painted-background que foi substituída pela imagem real */
+}
+
+/* Special GSAP helper classes */
+.gsap-reveal-item {
+  visibility: hidden;
+}
+
+/* Menu items */
+.menu-item {
+  @apply border-b border-gray-200 pb-6 mb-6 last:border-b-0 last:mb-0 last:pb-0;
+}
+
+/* Parallax container */
+.parallax-wrapper {
+  @apply overflow-hidden relative;
+}
+
+/* Hide scrollbar but allow scrolling */
+html {
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Adicionando estilo para cards de destaque */
+.feature-card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) rotateX(5deg);
 }
