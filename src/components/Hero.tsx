@@ -17,6 +17,7 @@ const Hero: React.FC = () => {
         parallaxElement,
         { y: 0 },
         {
+          y: 300,
           ease: "none",
           scrollTrigger: {
             trigger: parallaxElement.parentElement,
