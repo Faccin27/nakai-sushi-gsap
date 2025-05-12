@@ -1,4 +1,4 @@
-````md
+
 # 🍣 Nakai - Restaurante Japonês
 
 Landing page moderna e responsiva desenvolvida para o restaurante japonês **Nakai**, com animações suaves e interações elegantes utilizando **GSAP + ScrollTrigger**. O projeto foi construído com **Next.js**, visando performance, SEO e experiência do usuário.
@@ -9,7 +9,7 @@ Landing page moderna e responsiva desenvolvida para o restaurante japonês **Nak
 |------|-------|------|
 | ![Home](/public/images/screenshot1.png) | ![Sobre](/public/images/screenshot2.png) | ![Menu](/public/images/screenshot3.png) |
 
-| Reservas | Contato | Mobile |
+| Exclusividades | Avaliações | Localização |
 |----------|---------|--------|
 | ![Reservas](/public/images/screenshot4.png) | ![Contato](/public/images/screenshot5.png) | ![Mobile](/public/images/screenshot6.png) |
 
@@ -19,8 +19,7 @@ Landing page moderna e responsiva desenvolvida para o restaurante japonês **Nak
 - **[Next.js](https://nextjs.org/)** – Framework React para SSR, performance e SEO.
 - **[GSAP](https://greensock.com/gsap/)** – Biblioteca para animações suaves.
 - **[GSAP ScrollTrigger](https://greensock.com/scrolltrigger/)** – Plugin para animações baseadas no scroll.
-- **Sass / CSS Modules** – Estilização modular e organizada.
-- **Responsividade mobile-first**.
+- **[Tailwind](https://github.com/faccin27)** – Framework CSS pora estilização da pagina.
 
 
 
