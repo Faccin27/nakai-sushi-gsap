@@ -11,7 +11,7 @@ Landing page moderna e responsiva desenvolvida para o restaurante japonês **Nak
 
 | Exclusividades | Avaliações | Localização |
 |----------|---------|--------|
-| ![Reservas](/public/images/screenshot4.png) | ![Contato](/public/images/screenshot5.png) | ![Mobile](/public/images/screenshot6.png) |
+| ![Reservas](/public/images/screenshot4.png) | ![Contato](/public/images/screenshot5.png) | ![Localização](/public/images/screenshot6.png) |
 
 
 ## 🚀 Tecnologias Utilizadas
