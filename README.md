@@ -1,4 +1,3 @@
-
 # 🍣 Nakai - Restaurante Japonês
 
 Landing page moderna e responsiva desenvolvida para o restaurante japonês **Nakai**, com animações suaves e interações elegantes utilizando **GSAP + ScrollTrigger**. O projeto foi construído com **Next.js**, visando performance, SEO e experiência do usuário.
